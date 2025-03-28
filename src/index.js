@@ -4,6 +4,8 @@ import loadHome from './home.js';
 
 import loadMenu from "./menu.js";
 
+import loadAbout from "./about.js";
+
 function clearContent() {
     const content = document.querySelector('#content');
     content.innerHTML = ''; 
@@ -23,6 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
     menuBtn.addEventListener('click', () => {
         clearContent();
         loadMenu(); 
+    })
+
+    const aboutBtn = document.querySelector('#about-btn');
+    aboutBtn.addEventListener('click', () => {
+        clearContent();
+        loadAbout(); 
     })
 }); 
 
