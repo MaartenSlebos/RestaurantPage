@@ -19,18 +19,36 @@ nav {
     border-radius: 24px;
     border: none;
     font-size: 16px;
+    font-weight: 500;
 }
 
 #content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 #title {
+    display: flex;
+    justify-content: center;
     font-size: 36px;
     font-weight: 700;
+    padding: 24px;
+}
+
+#hero-img-box {
+    display: flex;
+    justify-content: center;
+    
 }
 
 #hero-img {
-    
+    border-radius: 16px;
+}
+
+#hero-text-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+
 }
